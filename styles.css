@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Montserrat', sans-serif;
+}
+p {
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 400px;
+    border-radius: 10px;
+    background-color: #fff;
+    max-width: 700px;
+    overflow: hidden;
+}
+.img-container {
+    background: url(images/image-product-desktop.jpg) no-repeat center center/cover;
+
+}
+.product-info {
+    padding:30px;
+}
+.product-info .upper {
+    margin: 10px 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.product-info > h2 {
+    text-transform: capitalize;
+    font-size: 2.3rem;
+    margin: 10px 0;
+    line-height: 1;
+    font-family:'Fraunces', serif;
+}
+.product-info > p {
+    margin: 10px 0;
+    line-height: 1.4;
+}
+.product-info .price-container {
+    display: flex;
+    align-items: center;
+}
+.product-info .price-container  h2{
+    font-size: 2rem;  
+    color: hsl(158, 36%, 37%);
+    font-family:'Fraunces', serif;
+}
+.product-info .price-container p{
+    margin-left: 20px;
+    text-decoration: line-through;
+}
+.btn {
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+    background-color: hsl(158, 36%, 37%);
+    padding: 15px;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    border-radius: 8px;
+    margin: 10px 0;
+    font-size: 14px;
+}
+.fa-light {
+    color: black;
+}
+@media (max-width: 620px) {
+    body {
+        width: 80%;
+        margin: 0 auto;
+    }
+    /* .img-container {
+        background: url(images/image-product-mobile.jpg) no-repeat center center/cover;
+    } */
+    main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px;
+        margin-top: 30px;
+
+    }
+}
